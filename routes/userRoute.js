@@ -7,10 +7,11 @@ import {
   update,
 } from "../controller/userController.js";
 
-const app=express()
-app.get('/',(req,res)=> {
-  res.send('MIS backend')
-})
+// const app=express()
+// app.get('/',(req,res)=> {
+//   res.send('MIS backend')
+// })
+
 const route = express.Router();
 
 route.post("/user", create);
