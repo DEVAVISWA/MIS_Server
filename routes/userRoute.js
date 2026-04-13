@@ -15,9 +15,11 @@ import {
 const route = express.Router();
 
 route.post("/user", create);
+
 route.get("/", (req, res) => {
   res.send("back end");
 });
+
 route.get("/users", getAllUsers);
 route.get("/user/:id", getUserById);
 route.put("/update/user/:id", update);
